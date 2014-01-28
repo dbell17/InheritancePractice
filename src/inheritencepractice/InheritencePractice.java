@@ -21,6 +21,15 @@ public class InheritencePractice {
         hourlyEmployee1.setStandardPayHoursWorked(40);
         hourlyEmployee1.overTimePay();
         
+        my.concrete.Employee Employee1 = new my.concrete.Employee();
+        Employee1.setName("Bill");
+        Employee1.setIdNumber("000555");
+        Employee1.setRegisterLoginID("Bill000555");
+        Employee1.setRegisterLoginPassword("12345");
+        
+        Employee1.employeeInformation();
+        
+        
     }
     
 }

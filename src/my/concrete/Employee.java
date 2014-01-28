@@ -15,6 +15,43 @@ public class Employee {
     String idNumber;
     String registerLoginID;
     String registerLoginPassword;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name= "";
+    }
+
+    public String getIdNumber() {
+        return idNumber;
+    }
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = "";
+    }
+
+    public String getRegisterLoginID() {
+        return registerLoginID;
+    }
+
+    public void setRegisterLoginID(String registerLoginID) {
+        this.registerLoginID = "";
+    }
+
+    public String getRegisterLoginPassword() {
+        return registerLoginPassword;
+    }
+
+    public void setRegisterLoginPassword(String registerLoginPassword) {
+        this.registerLoginPassword = "";
+    }
     
-    
+    public void employeeInformation() {
+        System.out.println("Employee 1's login password is " + registerLoginPassword + " and thier login ID is " + registerLoginID + ".  Their id number is " + idNumber + " and their name is " +  name);
+            
+    }
 }
+    
+
