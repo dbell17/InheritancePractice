@@ -10,6 +10,6 @@ package my.concrete;
  *
  * @author Don
  */
-public class SalariedEmployee {
+public class SalariedEmployee extends Employee{
     
 }
