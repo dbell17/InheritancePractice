@@ -21,7 +21,7 @@ public class Employee {
     }
 
     public void setName(String name) {
-        this.name= "";
+        this.name= name;
     }
 
     public String getIdNumber() {
@@ -29,7 +29,7 @@ public class Employee {
     }
 
     public void setIdNumber(String idNumber) {
-        this.idNumber = "";
+        this.idNumber = registerLoginID;
     }
 
     public String getRegisterLoginID() {
@@ -37,7 +37,7 @@ public class Employee {
     }
 
     public void setRegisterLoginID(String registerLoginID) {
-        this.registerLoginID = "";
+        this.registerLoginID = registerLoginID;
     }
 
     public String getRegisterLoginPassword() {
@@ -45,7 +45,7 @@ public class Employee {
     }
 
     public void setRegisterLoginPassword(String registerLoginPassword) {
-        this.registerLoginPassword = "";
+        this.registerLoginPassword =registerLoginPassword;
     }
     
     public void employeeInformation() {

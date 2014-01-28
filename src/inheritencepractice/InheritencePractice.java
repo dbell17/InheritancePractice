@@ -26,7 +26,7 @@ public class InheritencePractice {
         Employee1.setIdNumber("000555");
         Employee1.setRegisterLoginID("Bill000555");
         Employee1.setRegisterLoginPassword("12345");
-        
+        //System.out.println(Employee1.getName());
         Employee1.employeeInformation();
         
         
