@@ -15,4 +15,7 @@ public interface Employee  {
     String IDNUMBER="0055005";
     String REGISTERLOGINID="FF33FF";
     String REGISTERLOGINPASSWORD="33FF33";
+    double MANAGERRAISE=5000.0;
+    
+    
 }

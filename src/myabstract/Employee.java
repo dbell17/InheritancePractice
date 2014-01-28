@@ -6,13 +6,21 @@
 
 package myabstract;
 
+import static myinterface.Employee.MANAGERRAISE;
+
 /**
  *
  * @author Don
  */
-public class Employee {
+public class Employee extends my.concrete.Employee {
     String name;
     String idNumber;
     String registerLoginID;
     String registerLoginPassword;
+    double managerRaise = 5000.0;
+    
+    public static double giveManagerRaise(){
+        
+        return MANAGERRAISE;
+    }
 }
