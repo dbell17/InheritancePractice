@@ -29,7 +29,7 @@ public class Employee {
     }
 
     public void setIdNumber(String idNumber) {
-        this.idNumber = registerLoginID;
+        this.idNumber = idNumber;
     }
 
     public String getRegisterLoginID() {

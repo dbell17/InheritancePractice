@@ -11,19 +11,19 @@ package my.concrete;
  * @author Don
  */
 public class HourlyEmployee extends Employee{
-    double hourlyWage;
+    double hourlyWage=9.00;
     double standardPayHoursWorked;
     double overTimeHours;
     double overTimePay;
     double totalPay;
-    double totalHoursWorked= standardPayHoursWorked + overTimeHours;
+    double totalHoursWorked;
 
     public double getHourlyWage() {
         return hourlyWage;
     }
 
     public void setHourlyWage(double hourlyWage) {
-        this.hourlyWage = 9.00;
+        this.hourlyWage = hourlyWage;
     }
 
     public double getStandardPayHoursWorked() {
@@ -47,15 +47,15 @@ public class HourlyEmployee extends Employee{
     }
 
     public void setOverTimePay(double overTimePay) {
-        this.overTimePay =  (overTimeHours * hourlyWage)*1.5;
+        this.overTimePay =  overTimePay;
     }
 
     public double getTotalPay() {
         return totalPay;
     }
 
-    public void setTotalPay(double totalPay) {
-        this.totalPay = totalPay;
+    public void setTotalPay() {
+        this.totalPay = standardPayHoursWorked*hourlyWage + overTimePay;
     }
 
     public double getTotalHoursWorked() {
@@ -69,13 +69,12 @@ public class HourlyEmployee extends Employee{
     public double overTimePay(){
         if (totalHoursWorked > 40){
             overTimeHours =  totalHoursWorked - standardPayHoursWorked;
-            totalPay = (standardPayHoursWorked*hourlyWage) + overTimePay;
-            System.out.println("You have worked " + overTimeHours + " hours of overtime and will have made " + overTimePay + " from your overtime hours");
+            
+            System.out.println("You have worked " + overTimeHours + " hours of overtime");
         }
         else{
             standardPayHoursWorked = totalHoursWorked;
         }
-        System.out.println("Your total pay is " + totalPay);
         return totalPay;
     }
 }
