@@ -11,5 +11,6 @@ package my.concrete;
  * @author Don
  */
 public class SalariedEmployee extends Employee{
-    
+    double baseSalaryPay;
+    double yearlyBonus;
 }
