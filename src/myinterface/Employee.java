@@ -11,8 +11,8 @@ package myinterface;
  * @author Don
  */
 public interface Employee  {
-    String name;
-    String idNumber;
-    String registerLoginID;
-    String registerLoginPassword;
+    String NAME="Phil";
+    String IDNUMBER="0055005";
+    String REGISTERLOGINID="FF33FF";
+    String REGISTERLOGINPASSWORD="33FF33";
 }

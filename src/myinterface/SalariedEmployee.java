@@ -12,7 +12,7 @@ import my.concrete.*;
  *
  * @author Don
  */
-public class SalariedEmployee extends Employee{
+public class SalariedEmployee implements Employee{
     double baseSalaryPay;
     double yearlyBonus;
 
