@@ -30,6 +30,18 @@ public class InheritencePractice {
         Employee1.employeeInformation();
         
         
+        my.concrete.SalariedEmployee salariedEmployee1 = new my.concrete.SalariedEmployee();
+        salariedEmployee1.setBaseSalaryPay(50000);
+        salariedEmployee1.setYearlyBonus(5000);
+        salariedEmployee1.setName("Brad");
+        salariedEmployee1.setIdNumber("000553");
+        salariedEmployee1.setRegisterLoginID("brad00553");
+        salariedEmployee1.setRegisterLoginPassword("5512ffd");
+        System.out.println(salariedEmployee1);
+        
+        salariedEmployee1.employeeInformation();
+        salariedEmployee1.salariedEmployeeInformation();
+       
     }
     
 }
