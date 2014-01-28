@@ -10,7 +10,7 @@ package my.concrete;
  *
  * @author Don
  */
-public class Employee {
+public class Employee  {
     String name;
     String idNumber;
     String registerLoginID;
