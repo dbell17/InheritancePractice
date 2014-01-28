@@ -16,7 +16,11 @@ public class InheritencePractice {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        my.concrete.HourlyEmployee hourlyEmployee1 = new my.concrete.HourlyEmployee();
+        hourlyEmployee1.setTotalHoursWorked(50.0);
+        hourlyEmployee1.setStandardPayHoursWorked(40);
+        hourlyEmployee1.overTimePay();
+        
     }
     
 }
