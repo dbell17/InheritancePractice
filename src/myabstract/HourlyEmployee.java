@@ -12,7 +12,7 @@ import my.concrete.*;
  *
  * @author Don
  */
-public class HourlyEmployee extends Employee{
+public class HourlyEmployee extends Employee {
     double hourlyWage=9.00;
     double standardPayHoursWorked;
     double overTimeHours;
