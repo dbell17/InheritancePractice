@@ -11,5 +11,9 @@ package my.concrete;
  * @author Don
  */
 public class Employee {
+    String name;
+    String idNumber;
+    String registerLoginID;
+    String registerLoginPassword;
     
 }

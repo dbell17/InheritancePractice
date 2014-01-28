@@ -11,5 +11,6 @@ package my.concrete;
  * @author Don
  */
 public class SalaryPlusCommissionEmployee extends SalariedEmployee{
-    
+    double totalCommissionIncome;
+    double commissionPayPercentage;
 }

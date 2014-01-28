@@ -10,6 +10,7 @@ package my.concrete;
  *
  * @author Don
  */
-public class HourlyEmployee {
-    
+public class HourlyEmployee extends Employee{
+    double hourlyWage;
+    double hoursWorked;
 }
