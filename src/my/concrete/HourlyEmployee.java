@@ -31,7 +31,7 @@ public class HourlyEmployee extends Employee{
     }
 
     public void setStandardPayHoursWorked(double standardPayHoursWorked) {
-        this.standardPayHoursWorked = 0;
+        this.standardPayHoursWorked = standardPayHoursWorked;
     }
 
     public double getOverTimeHours() {
@@ -39,7 +39,7 @@ public class HourlyEmployee extends Employee{
     }
 
     public void setOverTimeHours(double overTimeHours) {
-        this.overTimeHours = overTimeHours;
+        this.overTimeHours = totalHoursWorked - standardPayHoursWorked;
     }
 
     public double getOverTimePay() {
@@ -63,7 +63,7 @@ public class HourlyEmployee extends Employee{
     }
 
     public void setTotalHoursWorked(double totalHoursWorked) {
-        this.totalHoursWorked = 0;
+        this.totalHoursWorked = totalHoursWorked;
     }
     
     public double overTimePay(){
@@ -75,7 +75,7 @@ public class HourlyEmployee extends Employee{
         else{
             standardPayHoursWorked = totalHoursWorked;
         }
-        
+        System.out.println("Your total pay is " + totalPay);
         return totalPay;
     }
 }
