@@ -13,19 +13,15 @@ import my.concrete.*;
  * @author Don
  */
 public class HourlyEmployee extends Employee {
-    double hourlyWage=9.00;
-    double standardPayHoursWorked;
-    double overTimeHours;
-    double overTimePay;
-    double totalPay;
-    double totalHoursWorked;
+    private static final double HOURLYWAGE=9.00;
+    private double standardPayHoursWorked;
+    private double overTimeHours;
+    private double overTimePay;
+    private double totalPay;
+    private double totalHoursWorked;
 
-    public double getHourlyWage() {
-        return hourlyWage;
-    }
-
-    public void setHourlyWage(double hourlyWage) {
-        this.hourlyWage = hourlyWage;
+    public double getHOURLYWAGE() {
+        return HOURLYWAGE;
     }
 
     public double getStandardPayHoursWorked() {
@@ -57,7 +53,7 @@ public class HourlyEmployee extends Employee {
     }
 
     public void setTotalPay() {
-        this.totalPay = standardPayHoursWorked*hourlyWage + overTimePay;
+        this.totalPay = standardPayHoursWorked*HOURLYWAGE + overTimePay;
     }
 
     public double getTotalHoursWorked() {
@@ -68,15 +64,20 @@ public class HourlyEmployee extends Employee {
         this.totalHoursWorked = totalHoursWorked;
     }
     
-    public double overTimePay(){
-        if (totalHoursWorked > 40){
-            overTimeHours =  totalHoursWorked - standardPayHoursWorked;
-            
-            System.out.println("You have worked " + overTimeHours + " hours of overtime");
-        }
-        else{
-            standardPayHoursWorked = totalHoursWorked;
-        }
-        return totalPay;
+ @Override
+    public void getEmployeeInformation() {
+        System.out.println(HOURLYWAGE + getName() + getIdNumber() + getRegisterLoginID() + getRegisterLoginPassword());
     }
+    
+//    public double overTimePay(){
+//        if (totalHoursWorked > 40){
+//            overTimeHours =  totalHoursWorked - standardPayHoursWorked;
+//            
+//            System.out.println("You have worked " + overTimeHours + " hours of overtime");
+//        }
+//        else{
+//            standardPayHoursWorked = totalHoursWorked;
+//        }
+//        return totalPay;
+//    }
 }

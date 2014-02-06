@@ -12,15 +12,52 @@ import static myinterface.Employee.MANAGERRAISE;
  *
  * @author Don
  */
-public class Employee extends my.concrete.Employee {
-    String name;
-    String idNumber;
-    String registerLoginID;
-    String registerLoginPassword;
-    double managerRaise = 5000.0;
-    
-    public static double giveManagerRaise(){
-        
-        return MANAGERRAISE;
+public abstract class Employee {
+    private String name;
+    private String idNumber;
+    private String registerLoginID;
+    private String registerLoginPassword;
+    private double managerRaise = 5000.0;
+
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getIdNumber() {
+        return idNumber;
+    }
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
+    }
+
+    public String getRegisterLoginID() {
+        return registerLoginID;
+    }
+
+    public void setRegisterLoginID(String registerLoginID) {
+        this.registerLoginID = registerLoginID;
+    }
+
+    public String getRegisterLoginPassword() {
+        return registerLoginPassword;
+    }
+
+    public void setRegisterLoginPassword(String registerLoginPassword) {
+        this.registerLoginPassword = registerLoginPassword;
+    }
+
+    public double getManagerRaise() {
+        return managerRaise;
+    }
+
+    public void setManagerRaise(double managerRaise) {
+        this.managerRaise = managerRaise;
+    }
+    
+    public abstract void getEmployeeInformation();
 }

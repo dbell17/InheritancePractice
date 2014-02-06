@@ -6,7 +6,7 @@
 
 package myinterface;
 
-import myabstract.Employed;
+
 
 /**
  *

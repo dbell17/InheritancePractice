@@ -36,7 +36,8 @@ public class SalariedEmployee extends Employee{
     public void setYearlyBonus(double yearlyBonus) {
         this.yearlyBonus = yearlyBonus;
     }
-    public void salariedEmployeeInformation() {
+    @Override
+    public void getEmployeeInformation() {
         System.out.println("Salaried Employee 1's yearly pay is " + baseSalaryPay + " and thier yearly bonus can be " + yearlyBonus );
             
     }
