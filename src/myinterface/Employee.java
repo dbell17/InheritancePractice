@@ -13,11 +13,18 @@ package myinterface;
  * @author Don
  */
 public interface Employee{
-    String NAME="Phil";
-    String IDNUMBER="0055005";
-    String REGISTERLOGINID="FF33FF";
-    String REGISTERLOGINPASSWORD="33FF33";
-    double MANAGERRAISE=5000.0;
-    
-    
+     public abstract double getHourlyWage();
+     public abstract void setHourlyWage(double hourlyWage);
+     public abstract double getStandardPayHoursWorked();
+     public abstract void setStandardPayHoursWorked(double standardPayHoursWorked);
+     public abstract double getOverTimeHours();
+     public abstract void setOverTimeHours(double overTimeHours);
+     public abstract double getOverTimePay();
+     public abstract void setOverTimePay(double overTimePay);
+     public abstract double getTotalPay(); 
+     public abstract void setTotalPay(double TotalPay);
+     public abstract double getTotalHoursWorked();
+     public abstract void setTotalHoursWorked(double totalHoursWorked);
+     
+
 }

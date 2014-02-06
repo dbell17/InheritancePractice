@@ -15,4 +15,20 @@ import my.concrete.*;
 public class SalaryPlusCommissionEmployee extends SalariedEmployee implements Employee{
     double totalCommissionIncome;
     double commissionPayPercentage;
+
+    public double getTotalCommissionIncome() {
+        return totalCommissionIncome;
+    }
+
+    public void setTotalCommissionIncome(double totalCommissionIncome) {
+        this.totalCommissionIncome = totalCommissionIncome;
+    }
+
+    public double getCommissionPayPercentage() {
+        return commissionPayPercentage;
+    }
+
+    public void setCommissionPayPercentage(double commissionPayPercentage) {
+        this.commissionPayPercentage = commissionPayPercentage;
+    }
 }

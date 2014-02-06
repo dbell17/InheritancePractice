@@ -6,7 +6,7 @@
 
 package myabstract;
 
-import static myinterface.Employee.MANAGERRAISE;
+
 
 /**
  *

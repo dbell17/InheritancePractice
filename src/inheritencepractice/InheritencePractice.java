@@ -47,7 +47,7 @@ public class InheritencePractice {
         
         HourlyEmployee hourlyEmployee2 = new HourlyEmployee();
     //System.out.println(HourlyEmployee.hourlyEmployee2());
-        System.out.println("Name is " + myinterface.Employee.NAME + " ID number is " + myinterface.Employee.IDNUMBER + " Register login is " + myinterface.Employee.REGISTERLOGINID + " Register Login Password is " + myinterface.Employee.REGISTERLOGINPASSWORD);
+//        System.out.println("Name is " + myinterface.Employee.NAME + " ID number is " + myinterface.Employee.IDNUMBER + " Register login is " + myinterface.Employee.REGISTERLOGINID + " Register Login Password is " + myinterface.Employee.REGISTERLOGINPASSWORD);
     
         System.out.println(" Bill is a manager.  He has done a good job and will recieve a raise for the amount of ");
         

@@ -13,12 +13,12 @@ import my.concrete.*;
  * @author Don
  */
 public class HourlyEmployee implements Employee{
-    double hourlyWage=9.00;
-    double standardPayHoursWorked;
-    double overTimeHours;
-    double overTimePay;
-    double totalPay;
-    double totalHoursWorked;
+    private double hourlyWage=9.00;
+    private double standardPayHoursWorked;
+    private double overTimeHours;
+    private double overTimePay;
+    private double totalPay;
+    private double totalHoursWorked;
 
     public double getHourlyWage() {
         return hourlyWage;
@@ -56,7 +56,7 @@ public class HourlyEmployee implements Employee{
         return totalPay;
     }
 
-    public void setTotalPay() {
+    public void setTotalPay(double TotalPay) {
         this.totalPay = standardPayHoursWorked*hourlyWage + overTimePay;
     }
 
@@ -68,6 +68,7 @@ public class HourlyEmployee implements Employee{
         this.totalHoursWorked = totalHoursWorked;
     }
     
+
     public double overTimePay(){
         if (totalHoursWorked > 40){
             overTimeHours =  totalHoursWorked - standardPayHoursWorked;
