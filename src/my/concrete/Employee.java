@@ -48,7 +48,7 @@ public class Employee  {
         this.registerLoginPassword =registerLoginPassword;
     }
     
-    public void employeeInformation() {
+    public void getEmployeeInformation() {
         
     
     }

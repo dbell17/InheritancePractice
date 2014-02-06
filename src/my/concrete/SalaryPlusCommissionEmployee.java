@@ -14,3 +14,4 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
     double totalCommissionIncome;
     double commissionPayPercentage;
 }
+

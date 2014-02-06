@@ -22,7 +22,7 @@ public class InheritencePractice {
         my.concrete.HourlyEmployee hourlyEmployee1 = new my.concrete.HourlyEmployee();
         hourlyEmployee1.setTotalHoursWorked(50.0);
         hourlyEmployee1.setStandardPayHoursWorked(40);
-        hourlyEmployee1.overTimePay();
+        
         
         my.concrete.Employee Employee1 = new my.concrete.Employee();
         Employee1.setName("Bill");
@@ -30,7 +30,7 @@ public class InheritencePractice {
         Employee1.setRegisterLoginID("Bill000555");
         Employee1.setRegisterLoginPassword("12345");
         //System.out.println(Employee1.getName());
-        Employee1.employeeInformation();
+        Employee1.getEmployeeInformation();
         
         
         my.concrete.SalariedEmployee salariedEmployee1 = new my.concrete.SalariedEmployee();
@@ -42,8 +42,7 @@ public class InheritencePractice {
         salariedEmployee1.setRegisterLoginPassword("5512ffd");
         //System.out.println(salariedEmployee1);
         
-        salariedEmployee1.employeeInformation();
-        salariedEmployee1.salariedEmployeeInformation();
+        salariedEmployee1.getEmployeeInformation();
        
         
         HourlyEmployee hourlyEmployee2 = new HourlyEmployee();
