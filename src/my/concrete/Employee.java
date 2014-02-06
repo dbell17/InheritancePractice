@@ -11,10 +11,10 @@ package my.concrete;
  * @author Don
  */
 public class Employee  {
-    String name;
-    String idNumber;
-    String registerLoginID;
-    String registerLoginPassword;
+    private String name;
+    private String idNumber;
+    private String registerLoginID;
+    private String registerLoginPassword;
 
     public String getName() {
         return name;
@@ -49,8 +49,8 @@ public class Employee  {
     }
     
     public void employeeInformation() {
-        System.out.println("Employee 1's login password is " + registerLoginPassword + " and thier login ID is " + registerLoginID + ".  Their id number is " + idNumber + " and their name is " +  name);
-            
+        
+    
     }
 }
     
